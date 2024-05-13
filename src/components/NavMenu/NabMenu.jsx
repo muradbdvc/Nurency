@@ -6,32 +6,38 @@ import './Nabmenu.css'
 const navitems = [
     {
         id:1,
-        title:'Home',
-        path:'/#',
-        cName: 'nav-item'
-    },
-    {
-        id:2,
         title:'Service',
         path:'/service',
         cName: 'nav-item'
     },
     {
-        id:3,
+        id:2,
         title:'About',
         path:'/about',
         cName: 'nav-item'
     },
     {
+        id:3,
+        title:'Marketplace',
+        path:'/marketplace',
+        cName: 'nav-item'
+    },
+    {
         id:4,
-        title:'Products',
-        path:'/products',
+        title:'Blog',
+        path:'/blog',
         cName: 'nav-item'
     },
     {
         id:5,
-        title:'Contact',
-        path:'/contact',
+        title:'Support',
+        path:'/support',
+        cName: 'nav-item'
+    },
+    {
+        id:6,
+        title:'Icon',
+        path:'/icon',
         cName: 'nav-item'
     }
 ];
@@ -42,7 +48,7 @@ function NabMenu() {
     <div>
         <nav className='navbar'>
             <Link to='/' className='navbar-logo'>
-                Nature
+               <img src="Assets/Logo.png" alt="site logo" />
             </Link>
             <ul id='navbar'>
                 {navitems.map(item=>{
@@ -55,6 +61,7 @@ function NabMenu() {
                     </li>
                     )
                 })}
+                <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Lat's Talk<span className='w-5 h-5 bg-white rounded-full ml-3'>4h</span></button>
             </ul>
         </nav>
     </div>

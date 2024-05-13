@@ -1,6 +1,6 @@
 # Nurency Website
 
-A startup for Reactjs developer
+Nurency website by Reactjs
 
 # What's included?
 
@@ -15,7 +15,7 @@ A startup for Reactjs developer
 
 ```bash
 # Clone the Git repository
-git clone https://github.com/muradbdvc/reactjs-starter.git
+git clone https://github.com/muradbdvc/Nurency.git
 
 # # Install PHP-composer dependencies [It's empty]
 # composer install
