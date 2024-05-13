@@ -1,0 +1,41 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+margin: 0;
+padding: 0;
+box-shadow: none;
+}
+
+@layer base {
+    h1 {
+      @apply font-bold my-3 text-3xl;
+    }
+    h2{
+        @apply font-semibold my-3 text-xl;
+    }
+    h3{
+        @apply font-semibold my-3 text-lg;
+    }
+}
+
+@layer components {
+    .card {
+      background-color: theme('colors.white');
+      border-radius: theme('borderRadius.lg');
+      padding: theme('spacing.6');
+      box-shadow: theme('boxShadow.xl');
+    }
+    /* ... */
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+   }
+   .todo-item p {
+    color: #888;
+    text-decoration: line-through;
+   }
