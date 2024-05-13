@@ -1,4 +1,4 @@
-# Reactjs project
+# Nurency Website
 
 A startup for Reactjs developer
 
