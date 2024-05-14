@@ -5,6 +5,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Service from './components/NavMenu/Service'
 import About from './components/NavMenu/About'
 import Contact from './components/NavMenu/Contact'
+import HeroDiv from './components/HeroDiv/HeroDiv'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
+      <HeroDiv />
     </div>
   )
 }
